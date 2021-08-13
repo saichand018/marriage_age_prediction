@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+    
+
+{% block content %}
+
+
+
+
+<div class='jumbotron'>
+
+<div class="container">
+
+
+<form action="{{url_for('thankyou')}}">
+<div>
+<label for="gender">GENDER:</label>
+<select name="gender"  required style="padding: 10px 5px;margin-top: 15px;border: 2px solid #d9d9d9;">
+<option value="">Select Gender</option>
+<option value="0">male</option>
+<option value="1">female</option>
+</select>
+</div>
+
+  <div>
+                        <label for="religion">RELIGION:</label>
+						<select  class="input100" id="religion" name="religion" style="padding: 10px 5px;margin-top: 15px;border: 2px solid #d9d9d9;" >
+							<option value="">Select Religion</option>
+							<option value="0">Christian</option>
+							<option value="1">Hindu</option>
+							<option value="2">Jain</option>
+							<option value="3">Muslim</option>
+							<option value="4">Sikh</option>
+						</select>
+
+
+</div>
+
+<div>
+
+					<label for="caste">CASTE:</label>
+						<select class="input100"  id="caste" name="caste" style="padding: 10px 5px;margin-top: 15px;border: 2px solid #d9d9d9;" >
+							<option value="">Select Caste</option>
+							<option value="0">Agarwal</option>
+							<option value="1">Agri</option>
+							<option value="2">Ahom</option>
+							<option value="3">Arora</option>
+							<option value="4">Arya Vysya</option>
+							<option value="5">Baidya</option>
+							<option value="6">Baishnab</option>
+							<option value="7">Baishya</option>
+							<option value="8">Balija</option>
+							<option value="9">Baniya</option>
+							<option value="10">Bhandari</option>
+							<option value="11">Bhatia</option>
+							<option value="12">Billava</option>
+							<option value="14">Brahmin</option>
+							<option value="14">Chowdhary</option>
+							<option value="15">Goud</option>
+							<option value="16">Gursikh</option>
+							<option value="17">Kaibarta</option>
+							<option value="18">Kalita</option>
+							<option value="19">Kamma</option>
+							<option value="19">Kapu</option>
+							<option value="19">Kayastha</option>
+							<option value="20">Khatri</option>
+							<option value="21">Kshatriya</option>
+							<option value="22">Lingayath</option>
+							<option value="23">Marthoma</option>
+							<option value="24">Memon</option>
+							<option value="24">Naidu</option>
+							<option value="25">OBC - Barber/Naayee</option>
+							<option value="26">Panchal</option>
+							<option value="27">Patel</option>
+							<option value="28">Reddy</option>
+							<option value="30">Roman Catholic</option>
+							<option value="29">Ramdasia</option>
+							<option value="30">Roman Catholic</option>
+							<option value="31">Sahu</option>
+							<option value="32">Saini</option>
+							<option value="33">Scheduled Caste (SC)</option>
+							<option value="34">Shwetamber</option>
+							<option value="35">Sindhi-Sakkhar</option>
+							<option value="36">Thakur</option>
+							<option value="37">Vaishnav</option>
+							<option value="38">Valmiki</option>
+							<option value="39">Vanniyar</option>
+							<option value="40">Viswabrahmin</option>
+							<option value="8">Yadava / Golla</option>
+							<option value="42">Others Castes</option>
+						</select>
+</div>
+
+<br>
+
+<div>
+					<label for="height_cms">HEIGHT:</label>
+					<input name="height_cms" placeholder="Height (Centimeters) ex: 175">
+					
+</div>				
+
+<br>
+
+<div>
+<input class="btn btn-primary btn btn-default btn-lg active" type="submit" value="submit">
+
+</div>
+
+
+
+
+
+
+
+
+</form>
+
+</div>
+</div>
+
+{% endblock  %}
